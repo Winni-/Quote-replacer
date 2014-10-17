@@ -1,7 +1,7 @@
 $(function() {
 	"use strict"
 	var target = "p";
-	var text = $(target).html();
+	var text = $(target).not(target+" "+target).html();
 	var weAreInTag = false;// Means we are beetwen < and >
 	var weHaveOpened = false;
 	var script = false; // We do not want to do anything beetwen <script> and </script>

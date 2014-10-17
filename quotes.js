@@ -29,4 +29,5 @@ $(function() {
 	};
 	text = newText.join("");	
 	$(target).empty().append(text);
+	$(document).trigger("ready");
 });
